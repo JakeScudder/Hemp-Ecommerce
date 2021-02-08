@@ -12,8 +12,8 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "Trees 4 Sale",
-  description: "We have a large variety of trees for sale",
+  title: "Hemp Highway",
+  description: "High Quality, Legal CBD Products",
   keywords: "",
 };
 

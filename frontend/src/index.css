@@ -3,8 +3,8 @@ main {
 }
 
 .product-img {
-  height: 200px;
-  width: 320px;
+  height: 312px;
+  width: 250px;
 }
 
 h1 {
@@ -38,6 +38,11 @@ button.price-display.btn-block.mb-3.btn.btn-primary {
   pointer-events: none;
 }
 
+/* Disables paypal button for portfolio*/
+#paypal-container {
+  pointer-events: none;
+}
+
 .order-id-col {
   font-size: 12px;
 }
@@ -63,7 +68,7 @@ button.price-display.btn-block.mb-3.btn.btn-primary {
 }
 
 .carousel img {
-  height: 350px;
+  height: 380px;
   padding: 20px;
   margin: 20px 40px 60px 40px;
   border-radius: 15%;

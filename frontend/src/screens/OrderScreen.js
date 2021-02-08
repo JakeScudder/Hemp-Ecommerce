@@ -199,7 +199,8 @@ const OrderScreen = ({ match, history }) => {
                 </Row>
               </ListGroup.Item>
               {!order.isPaid && (
-                <ListGroup.Item>
+                <ListGroup.Item id="paypal-container">
+                  {/* CSS is disabling this container */}
                   {loadingPay && <Loader />}
                   {!sdkReady ? (
                     <Loader />
@@ -207,6 +208,7 @@ const OrderScreen = ({ match, history }) => {
                     <PayPalButton
                       amount={order.totalPrice}
                       onSuccess={successPaymentHandler}
+                      className="paypal-button"
                     />
                   )}
                 </ListGroup.Item>

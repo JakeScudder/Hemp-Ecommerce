@@ -24,6 +24,9 @@ const SearchBox = ({ history }) => {
       <Button type="submit" variant="outline-success" className="p-2">
         Search
       </Button>
+      <h5 style={{ fontSize: ".8rem" }} className="ml-3">
+        This is a proof of concept. Payment is disabled{" "}
+      </h5>
     </Form>
   );
 };
