@@ -1,0 +1,80 @@
+main {
+  min-height: 80vh;
+}
+
+.product-img {
+  height: 200px;
+  width: 320px;
+}
+
+h1 {
+  font-size: 1.9rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  padding: 0.5rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
+
+.card-title {
+  color: #158cba;
+}
+
+button.price-display.btn-block.mb-3.btn.btn-primary {
+  opacity: 1;
+  background-color: #3077a9;
+  width: 140px;
+}
+
+.no-hover {
+  pointer-events: none;
+}
+
+.order-id-col {
+  font-size: 12px;
+}
+
+.order-items-container {
+  border: 2.5px solid black;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.carousel-caption h4 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 350px;
+  padding: 20px;
+  margin: 20px 40px 60px 40px;
+  border-radius: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h4 {
+    font-size: 3vw;
+  }
+}
