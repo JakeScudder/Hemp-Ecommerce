@@ -25,7 +25,7 @@ const ProductCarousel = () => {
   ) : (
     <Carousel pause="hover" className="bg-info">
       <Carousel.Item interval={20000}>
-        <Image src={hemp} style={{ opacity: ".4" }} alt="First slide" fluid />
+        <Image src={hemp} style={{ opacity: ".3" }} alt="First slide" fluid />
         <Carousel.Caption style={{ textAlign: "left" }} className="mb-5">
           <h3 style={{ color: "black" }}>
             <strong>Organic Hemp</strong>
@@ -35,9 +35,14 @@ const ProductCarousel = () => {
               {" "}
               The Hemp Farming Act of 2018 legalized all industrial hemp and
               products made from industrial hemp containing no more than .3%
-              THC.
+              THC. It can be refined into a variety of commercial items,
+              including paper, rope, textiles, clothing, and biodegradable
+              plastics.
             </strong>
           </h5>
+          <p>
+            -<i>wikipedia.org/wiki/Hemp</i>
+          </p>
           <h5 style={{ color: "black" }}>
             <strong>
               While CBD is an essential component of medical marijuana, it is

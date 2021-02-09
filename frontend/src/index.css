@@ -28,14 +28,20 @@ h3 {
   color: #158cba;
 }
 
-button.price-display.btn-block.mb-3.btn.btn-primary {
-  opacity: 1;
-  background-color: #3077a9;
+button.price-display.btn-block.mb-2.btn.btn-primary {
+  opacity: 0.9;
+  background-color: #000000e3;
   width: 140px;
+}
+
+.add-to-cart {
+  font-size: 0.9rem;
 }
 
 .no-hover {
   pointer-events: none;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 /* Disables paypal button for portfolio*/

@@ -105,28 +105,28 @@ const ProductScreen = ({ history, match }) => {
                         <Button
                           name="price"
                           type="button"
-                          className="price-display btn-block mb-3 no-hover"
+                          className="price-display btn-block mb-2 no-hover"
                           disabled>
                           Price By Weight
                         </Button>
                         <Button
                           name="eighth"
                           type="button"
-                          className="price-display btn-block mb-3 no-hover"
+                          className="price-display btn-block mb-2 no-hover"
                           disabled>
                           {`1/8oz: $${product.price.eighth}`}
                         </Button>
                         <Button
                           name="quarter"
                           type="button"
-                          className="price-display btn-block mb-3 no-hover"
+                          className="price-display btn-block mb-2 no-hover"
                           disabled>
                           {`1/4oz: $${product.price.quarter}`}
                         </Button>
                         <Button
                           name="half"
                           type="button"
-                          className="price-display btn-block mb-3 no-hover"
+                          className="price-display btn-block mb-2 no-hover"
                           disabled>
                           {`1/2oz: $${product.price.half}`}
                         </Button>
@@ -134,7 +134,7 @@ const ProductScreen = ({ history, match }) => {
                           name="ounce"
                           type="button"
                           onClick={addToCartHandler}
-                          className="price-display btn-block mb-3 no-hover"
+                          className="price-display btn-block mb-2 no-hover"
                           disabled>
                           {`1oz: $${product.price.ounce}`}
                         </Button>
@@ -167,7 +167,7 @@ const ProductScreen = ({ history, match }) => {
                         name="eighth"
                         type="button"
                         onClick={() => addToCartHandler("eighth")}
-                        className="btn-block mb-3">
+                        className="btn-block mb-3 add-to-cart">
                         <Col>{`1/8oz: $${product.price.eighth}`}</Col>
                         <Col>Add To Cart</Col>
                       </Button>
@@ -175,7 +175,7 @@ const ProductScreen = ({ history, match }) => {
                         name="quarter"
                         type="button"
                         onClick={() => addToCartHandler("quarter")}
-                        className="btn-block mb-3">
+                        className="btn-block mb-3 add-to-cart">
                         <Col>{`1/4oz: $${product.price.quarter}`}</Col>
                         <Col>Add To Cart</Col>
                       </Button>
@@ -183,7 +183,7 @@ const ProductScreen = ({ history, match }) => {
                         name="half"
                         type="button"
                         onClick={() => addToCartHandler("half")}
-                        className="btn-block mb-3">
+                        className="btn-block mb-3 add-to-cart">
                         <Col>{`1/2oz: $${product.price.half}`}</Col>
                         <Col>Add To Cart</Col>
                       </Button>
@@ -191,7 +191,7 @@ const ProductScreen = ({ history, match }) => {
                         name="ounce"
                         type="button"
                         onClick={() => addToCartHandler("ounce")}
-                        className="btn-block mb-3">
+                        className="btn-block mb-3 add-to-cart">
                         <Col>{`1oz: $${product.price.ounce}`}</Col>
                         <Col>Add To Cart</Col>
                       </Button>
@@ -218,7 +218,7 @@ const ProductScreen = ({ history, match }) => {
                   </ListGroup.Item>
                 ))}
                 <ListGroup.Item>
-                  <h2>Write a Dank Review</h2>
+                  <h2>Write a Review</h2>
                   {errorReview && (
                     <Message variant="danger">{errorReview}</Message>
                   )}
@@ -231,11 +231,11 @@ const ProductScreen = ({ history, match }) => {
                           value={rating}
                           onChange={(e) => setRating(e.target.value)}>
                           <option value="">Select...</option>
-                          <option value="1">1 - Brick</option>
-                          <option value="12">2 - KB</option>
-                          <option value="3">3 - Beasters</option>
-                          <option value="4">4 - Headies</option>
-                          <option value="5">5 - Lt. Dank</option>
+                          <option value="1">1 star</option>
+                          <option value="12">2 stars</option>
+                          <option value="3">3 stars</option>
+                          <option value="4">4 stars</option>
+                          <option value="5">5 stars</option>
                         </Form.Control>
                       </Form.Group>
                       <Form.Group controlId="comment">
