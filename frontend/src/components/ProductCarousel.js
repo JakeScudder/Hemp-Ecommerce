@@ -25,8 +25,8 @@ const ProductCarousel = () => {
   ) : (
     <Carousel pause="hover" className="bg-info">
       <Carousel.Item interval={20000}>
-        <Col className="f">
-          <Row>
+        <Col>
+          <Row className="hemp-info-row">
             <Col md={6} sm={10}>
               <Image
                 src={hemp}

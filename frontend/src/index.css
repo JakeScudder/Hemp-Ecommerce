@@ -69,10 +69,14 @@ button.price-display.btn-block.mb-2.btn.btn-primary {
   margin-bottom: 10px;
 }
 
+.hemp-info-row {
+  height: 700px;
+}
+
 .carousel-hemp-image {
   height: 380px;
   padding: 20px;
-  margin: 20px 40px 60px 40px;
+  margin: 20px auto 60px auto;
   border-radius: 15%;
 }
 
