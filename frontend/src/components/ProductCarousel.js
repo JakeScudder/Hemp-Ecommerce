@@ -95,19 +95,22 @@ const ProductCarousel = () => {
       </Carousel.Item>
       {products.map((product) => (
         <Carousel.Item interval={7000} key={product._id}>
-          <Link to={`/products/${product._id}`}>
-            <Image
-              className="carousel-product-image"
-              src={product.image}
-              alt={product.name}
-              fluid
-            />
-            <Carousel.Caption className="mb-3 carousel-caption">
-              <h4>
-                {product.name}, Starting At: ${product.price.eighth}
-              </h4>
-            </Carousel.Caption>
-          </Link>
+          <Col md={6} sm={10} className="carousel-products">
+            <Link to={`/products/${product._id}`}>
+              <Image
+                className="carousel-product-image"
+                src={product.image}
+                alt={product.name}
+                style={{ marginLeft: "auto", marginRight: "auto" }}
+                fluid
+              />
+              <Carousel.Caption className="mb-3 carousel-caption">
+                <h4>
+                  {product.name}, Starting At: ${product.price.eighth}
+                </h4>
+              </Carousel.Caption>
+            </Link>
+          </Col>
         </Carousel.Item>
       ))}
     </Carousel>
