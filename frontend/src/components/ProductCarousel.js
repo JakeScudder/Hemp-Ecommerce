@@ -27,7 +27,11 @@ const ProductCarousel = () => {
       <Carousel.Item interval={20000}>
         <Col>
           <Row className="hemp-info-row">
-            <Col md={6} sm={10}>
+            <Col
+              md={6}
+              sm={10}
+              className="hemp-info-col"
+              style={{ marginTop: "auto", marginBottom: "auto" }}>
               <Image
                 src={hemp}
                 className="carousel-hemp-image"
@@ -35,9 +39,19 @@ const ProductCarousel = () => {
                 fluid
               />
             </Col>
-            <Col md={6} sm={10}>
+            <Col
+              md={6}
+              sm={10}
+              style={{
+                marginTop: "auto",
+                marginBottom: "auto",
+              }}
+              className="hemp-info-col">
               <Carousel.Caption
-                style={{ textAlign: "left" }}
+                style={{
+                  textAlign: "left",
+                  position: "initial",
+                }}
                 className="carousel-main-caption mb-3">
                 <h3 style={{ color: "black" }}>
                   <strong>Organic Hemp</strong>

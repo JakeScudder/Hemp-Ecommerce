@@ -41,7 +41,7 @@ const HomeScreen = ({ match }) => {
         <Message variant="danger">{error}</Message>
       ) : (
         <>
-          <Row>
+          <Row style={{ justifyContent: "center" }}>
             {products.map((product) => (
               <Col key={product._id} sm={10} md={6} lg={4} xl={4}>
                 <Products product={product} />

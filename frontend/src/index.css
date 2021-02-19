@@ -103,6 +103,7 @@ button.price-display.btn-block.mb-2.btn.btn-primary {
 .carousel a {
   margin: 0 auto;
 }
+
 @media (max-width: 1000px) {
   .carousel-hemp-image {
     height: 320px;
@@ -111,6 +112,30 @@ button.price-display.btn-block.mb-2.btn.btn-primary {
     font-size: 0.6rem;
   }
   .carousel-main-caption h3 {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .hemp-info-col {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-main-caption {
+    margin-top: -2rem;
+  }
+
+  .carousel-main-caption p {
+    margin-bottom: 0px;
+  }
+
+  .carousel-product-image {
+    height: 280px;
+  }
+
+  .carousel-caption h4 {
     font-size: 1rem;
   }
 }
