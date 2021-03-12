@@ -13,6 +13,8 @@ import { listProducts } from "../actions/productActions";
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
 
+  console.log(match);
+
   const pageNumber = match.params.pageNumber || 1;
 
   const dispatch = useDispatch();
